@@ -120,4 +120,37 @@
       <handler>ЗадачиПолучить</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="9e7ce197-45bc-4ec2-8eb9-e1f7ce1b41c0">
+    <name>ПолучениеПоказателейМонитораРуководителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение показателей монитора руководителя</value>
+    </synonym>
+    <template>/indicators</template>
+    <methods uuid="44e484cc-2fe1-4721-9bca-61b08a61f913">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПолучениеПоказателейМонитораРуководителяПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="029baeb2-62d3-4a33-8109-f171f1c97295">
+    <name>ОбновитьПоказателиМонитораРуководителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить показатели монитора руководителя</value>
+    </synonym>
+    <template>/indicators/update</template>
+    <methods uuid="6a7dbbcf-9705-46e7-9f2e-18ea9de7f5b1">
+      <name>Запустить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запустить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ОбновитьПоказателиМонитораРуководителяЗапустить</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
