@@ -49,5 +49,6 @@
   <commonModules>CommonModule.API_Склады</commonModules>
   <commonModules>CommonModule.API_СлужебныйСервер</commonModules>
   <commonModules>CommonModule.API_Контрагенты</commonModules>
+  <commonModules>CommonModule.API_Показатели</commonModules>
   <httpServices>HTTPService.Янд_ЯндексAPI</httpServices>
 </mdclass:Configuration>

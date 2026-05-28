@@ -104,4 +104,20 @@
       <handler>ПолучениеСпискаРасчетовСКонтрагентамиПолучить</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="33b3c50b-6778-4372-b30c-1a6213d8527f">
+    <name>ПолучениеСпискаЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение списка задач</value>
+    </synonym>
+    <template>/tasks</template>
+    <methods uuid="985b143d-866c-43c1-9685-ae43d43d4906">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ЗадачиПолучить</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>
