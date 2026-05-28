@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74b12d2c-63d8-4eee-8e28-3854b2bd1236">
+  <name>Янд_ЯндексAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Янд яндекс API</value>
+  </synonym>
+  <rootURL>ApiV1</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="b695ccc3-f1f9-48c4-aeb4-f78dbd3aa9cb">
+    <name>ПолучениеСпискаСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение списка счетов</value>
+    </synonym>
+    <template>/accounts</template>
+    <methods uuid="a0cc8a2c-f50d-4c48-90df-4c49c6ce4d5d">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПолучениеСпискаСчетовПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="1ffd8ddb-729f-40e0-b397-270ccd03e108">
+    <name>ФормированиеОСВПоСчету</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование ОСВПо счету</value>
+    </synonym>
+    <template>/accounts/balance_sheet</template>
+    <methods uuid="3e4a41f8-1417-40fb-816f-e2a8e239dce4">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ФормированиеОСВПоСчетуПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="3127f2e8-7aba-4a4a-a488-745ca3c07d86">
+    <name>ПолучениеСпискаСкладов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение списка складов</value>
+    </synonym>
+    <template>/stores</template>
+    <methods uuid="2c59c442-39c0-4f3b-b7e7-c0f10d33d3e9">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПолучениеСпискаСкладовПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="ad0d2f89-d081-4f32-8a9e-be0b2a59faac">
+    <name>ПолучениеОстатковТоваровНаСкладе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение остатков товаров на складе</value>
+    </synonym>
+    <template>/stores/products</template>
+    <methods uuid="1d7ed45f-32aa-421f-af50-1e4ee47c68a8">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПолучениеОстатковТоваровНаСкладеПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="99b58a9a-f8ce-4412-b3f6-8ae23f447d0f">
+    <name>ПолучениеСпискаКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение списка контрагентов</value>
+    </synonym>
+    <template>/counter_parties</template>
+    <methods uuid="930054f5-a27d-4092-92e4-230c382632da">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПолучениеСпискаКонтрагентовПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="4d60e1ff-9ed4-4c9e-8512-b993909c8a7f">
+    <name>ПолучениеСпискаРасчетовСКонтрагентами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение списка расчетов с контрагентами</value>
+    </synonym>
+    <template>/counter_parties/calculations</template>
+    <methods uuid="26dd9fdb-1d9d-4b48-9d47-a9fd41f8bce6">
+      <name>Получить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить</value>
+      </synonym>
+      <handler>ПолучениеСпискаРасчетовСКонтрагентамиПолучить</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
